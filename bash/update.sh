@@ -13,16 +13,17 @@ conn_test() {
     else
         echo 1
     fi
-    #rm ping.tmp
+    rm ping.tmp
 }
 
 res=$(conn_test)
 
 if [ "$res" == "0" ]; then
     echo "Connection established."
+    # Add error handling for commands below
     apt-get update > /dev/null
     apt-get upgrade -y > /dev/null
     echo "Done! All installed packages have been updated."
 else
-    echo "Could not connect to $test_server. Check connection."
+    echo "Could not connect to $test_server. Check connection." >&2
 fi
