@@ -1,5 +1,5 @@
-# Scripts
-A collection of scripts (bash, PowerShell, Python) which I have found to be useful.
+# Toolkit
+A collection of scripts / payloads and so on which I have found to be helpful during engagements.
 
 ## One-Liners
 
