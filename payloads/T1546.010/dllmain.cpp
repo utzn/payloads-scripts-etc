@@ -10,7 +10,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		MessageBox(0, L"WithSecure - T1546.010 - AppInit DLL called", 0, 0);
+		MessageBox(NULL, (LPCWSTR)"WithSecure - T1546.010 - AppInit DLL called", (LPCWSTR)"T1546.010", MB_OK);
 	case DLL_THREAD_ATTACH:
 	case DLL_THREAD_DETACH:
 	case DLL_PROCESS_DETACH:
