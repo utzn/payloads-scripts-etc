@@ -11,7 +11,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     case DLL_PROCESS_ATTACH: {
         LPSTARTUPINFOA *si = new LPSTARTUPINFOA();
         LPPROCESS_INFORMATION *pi = new LPPROCESS_INFORMATION();
-        CreateProcessA(NULL, (LPSTR)"cmd.exe", NULL, NULL, TRUE, CREATE_SUSPENDED, NULL, NULL, *si, *pi);
+        CreateProcessA(NULL,(LPSTR)"cmd.exe",NULL,NULL,TRUE,CREATE_SUSPENDED,NULL,NULL,*si,*pi);
     }
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
