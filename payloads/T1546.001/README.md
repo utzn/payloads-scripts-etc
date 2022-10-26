@@ -1,0 +1,1 @@
+HKEY_CLASSES_ROOT\txtfile\shell\open\command
