@@ -1,0 +1,2 @@
+# T1137.001 - Office Template Macros 
+`Normal.dotm` should be placed in `%APPDATA%\Roaming\Microsoft\Word\STARTUP`. Opening `poc_document.docx` will load this default template, and because the `STARTUP` folder is a trusted location, the included Macro will be executed.

